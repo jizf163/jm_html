@@ -1,0 +1,20 @@
+# jm
+北京佳膜环保有限公司网站  
+目录结构  
+_about,关于我们的内容  
+_includes,  
+  nav.html是导航  
+  footer.html是网页底部信息  
+  en_**是对应的英文网站  
+_layouts  
+  article.html是关于我们的模板  
+  index.html是首页  
+  p_fangzhi.html是纺织产品  
+  p_5g.html是电子芯片板块  
+  p_xinfeng.html是新风过滤  
+  p_xinnengyuan.html是新能源板块  
+  p_yiyao.html是医药板块  
+  en_*对应是英文网站  
+en  
+  about，是英文关于我们的内容  
+_config.yml是配置文件  
