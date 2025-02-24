@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+  <!-- meta data & title -->
+  <meta charset="utf-8">
+  <title>大品财税</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大品财税">
+  <meta name="author" content="">
+
+  <!-- Favicon and touch icons -->
+  <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/animate.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?45751fa179eca34528da2103b38e7451";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+    
+</head>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img alt="Brand" src="../assets/img/logo.png"></a>
+      </div>
+  
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav  navbar-right">
+          <li class="active"><a href="/">首页 <span class="sr-only">(current)</span></a></li>
+          <li><a href="/about.html">关于我们</a></li>
+          <li><a href="/blog.html">财税知识</a></li>
+          <li><a href="/contact.html"><span>联系我们</span></a></li>
+        </ul>
+        
+        
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
+
+  <body>
+    <!-- Main Container -->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=f7903u8G9QyG5sV4pACxvZBy3nNenxMg">
+</script>
+<div class="container-fluid" style="padding: 0 ;">
+    <div id="mapCanvas" class="map-canvas no-margin" style="height: 500px;">
+        
+        <script type="text/javascript">
+            var map   = new BMap.Map("mapCanvas"); // 创建Map实例
+            var point_center =new BMap.Point("114.51325","36.592929"); // 创建点坐标
+            var point = new BMap.Point("114.517176", "36.631281"); // 创建点坐标
+            var point2 = new BMap.Point("114.503225","36.571165"); // 创建点坐标
+            var point3 = new BMap.Point("114.485115","36.591683"); // 创建点坐标
+
+            map.centerAndZoom(point_center, 13); // 初始化地图,设置中心点坐标和地图级别。
+            var marker = new BMap.Marker(point); // 创建标注
+            var marker2 = new BMap.Marker(point2); // 创建标注
+            var marker3 = new BMap.Marker(point3); // 创建标注
+            map.addOverlay(marker); // 将标注添加到地图中
+            map.addOverlay(marker2); // 将标注添加到地图中
+            map.addOverlay(marker3); // 将标注添加到地图中
+            var infoWindow = new BMap.InfoWindow("大品财税（总部）<br>1861758898"); // 创建信息窗口对象
+            marker.openInfoWindow(infoWindow);
+            var infoWindow2 = new BMap.InfoWindow("大品财税（美的时代城分部）<br>1861758898"); // 创建信息窗口对象
+            marker2.openInfoWindow(infoWindow2);
+            var infoWindow3 = new BMap.InfoWindow("大品财税（赵都新城分部）<br>1861758898"); // 创建信息窗口对象
+            marker3.openInfoWindow(infoWindow3);
+
+
+            marker.addEventListener("click", function(){          
+                marker.openInfoWindow(infoWindow); //开启信息窗口
+	        }); 
+            marker2.addEventListener("click", function(){          
+                marker2.openInfoWindow(infoWindow2); //开启信息窗口
+	        }); 
+            marker3.addEventListener("click", function(){          
+                marker3.openInfoWindow(infoWindow3); //开启信息窗口
+	        }); 
+
+            map.enableScrollWheelZoom(); //启用滚轮放大缩小
+            //添加缩放控件
+            map.addControl(new BMap.NavigationControl());
+            map.addControl(new BMap.ScaleControl());
+            map.addControl(new BMap.OverviewMapControl());
+
+            
+        </script>
+    </div>
+</div>
+
+<div class="container-fluid" style="margin-top: 20px">
+  <div class="row">
+    
+    <div class="container">
+      <div class="col-lg-4">
+        <h4>联系我们:</h4>
+
+        <p class="block-author">邯郸市大品科技有限公司</p>
+        <p>邯郸市, 丛台区,</p>
+        <p>Phone: 18617585898</p>
+        <p>Fax: 18617585898</p>
+
+        <em class="block-author">Email: market@xindapin.cn</em> <br>
+        <br>
+        <!-- p class="lead">Social Link</p><hr>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <a href="#"><img src="assets/img/social-icons/btn_skype.png" alt="Skype"></a>
+          Call us
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <a href="#"><img src="assets/img/social-icons/btn_facebook.png" alt="Facebook"></a>
+          Like us
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+          <a href="#"><img src="assets/img/social-icons/btn_twitter.png" alt="Twitter"></a>
+          Follow us
+        </div>
+        <br !-->
+      </div>
+      <div class="col-lg-8">
+        <div class="feedback-form">
+
+          <div id="contact-response"></div>
+          
+          <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">
+            <fieldset>
+              <div class="form-group form-group-fullname">
+                <label class="control-label" for="fullname">姓名 *</label>
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter Your Name">
+              </div>
+              <div class="form-group form-group-email">
+                <label class="control-label" for="email">电话/邮件 *</label>
+                <input type="text" class="form-control" name="email" id="email" placeholder="Enter Your E-Mail">
+              </div>
+              <div class="form-group form-group-message">
+                <label class="control-label" for="message">信息 *</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+              </div>           
+              <button type="submit" class="btn btn-primary">发送</button>
+            </fieldset>
+          </form>
+          
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>    
+    
+<!--End Main Container -->
+  </body>
+
+  <!-- Footer -->
+<footer> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3><i class="fa fa-map-marker"></i> 联系我们:</h3>
+        <p class="footer-contact">
+          邯郸市大品科技有限公司 <br>
+          Phone: 18617585898 <br>
+          Fax: 18617585898 <br>
+          Email: market@xindapin.cn<br>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-external-link"></i> 站内连接</h3>
+        <p><a href="/"> 首页</a></p>
+        <p><a href="/about"> 关于我们</a></p>
+        <p><a href="/contact"> 联系我们</a></p>
+        <p><a href="/blog"> 财税知识</a></p>
+      </div>
+      <div class="col-md-4">
+        <h3><i class="fa fa-heart"></i> 微信</h3>
+        <div id="social-icons">
+          
+            <a href="http://plus.google.com" class="btn-group google-plus">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          
+
+          
+            <a href="http://www.linkedin.com" class="btn-group linkedin">
+              <i class="fa fa-linkedin-square"></i>
+            </a>
+          
+
+          
+            <a href="http://www.twitter.com" class="btn-group twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          
+
+          
+            <a href="http://www.facebook.com" class="btn-group facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>&copy; Copyright 2023, <a href="#">大品财税</a>. <br> 大品科技制作维护 <a href="http://www.xindapin.cn/" target="_blank">大品科技制作维护</a></p>
+  </div>
+</footer>
+</html>
